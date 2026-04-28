@@ -59,7 +59,7 @@ const pages = {
                     'Mengintegrasikan perspektif riset ke dalam solusi digital praktis untuk sektor publik dan enterprise.',
                     'Pengembangan framework **DonatJS** sebagai pembuktian konsep arsitektur yang ringan dan efisien.',
                     '---',
-                    'table:default'
+                    'table:'
                 ],
                 table: [
                     { 'Kategori': 'Web Portal', 'Layanan': 'Custom CMS / Landing Page', 'Teknologi': 'DonatJS Core' },
@@ -75,10 +75,10 @@ const pages = {
             leftCol: {
                 subtitle: 'Technical Stack',
                 lines: [
-                    'skill:Software Architecture (JS/Node):95',
-                    'skill:Cybersecurity & IT Audit:80',
-                    'skill:Microservices & Wasm (Research):75',
-                    'skill:Project Management:80'
+                    'skill:85%:Software Architecture (JS/Node)',
+                    'skill:75%:Cybersecurity & IT Audit',
+                    'skill:70%:Microservices & Wasm (Research)',
+                    'skill:90%:Project Management'
                 ]
             },
             rightCol: {
