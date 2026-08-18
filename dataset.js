@@ -1,237 +1,129 @@
+// Hasil konversi sismadi-landing.html ke format dataset.js
+// Ditambahkan sebagai halaman baru "landing" (Cerita Ekosistem Sismadi)
+// Section type baru mengikuti pola leftCol/rightCol/lines yang sudah dipakai
+// pada section 'article', ditambah 3 section type baru: 'timeline', 'ledger',
+// dan 'files' (kartu produk) — semuanya deklaratif seperti section lainnya.
+
 const pages = {
-    home: [
+
+    landing: [
         {
             section: 'hero',
-            title: 'Wawan Sismadi, M.Kom.',
-            tagline: 'Researcher, Academic & Software Architect',
-            description: 'Profesional TI yang menjembatani riset akademis dengan implementasi industri. Berfokus pada optimasi arsitektur perangkat lunak dan Microservices. Aktif sebagai Dosen di IPWIJA, Owner PT Sismadi Langit Solusi, dan Mahasiswa Doktoral di Universitas Ahmad Dahlan.',
-            img: 'wawansismadi.jpeg',
-            // imgClass: 'di-Sismadi Langit Solusi',
-
-            badges: ['PhD Student UAD','Dosen IPWIJA','Owner PT SLS'],
-            cta: { text: 'Diskusikan Proyek &raquo;', link: 'contact' }
+            eyebrow: 'Cerita di balik ekosistem Sismadi',
+            title: 'Dua peran yang berjalan bersamaan — <em>mengajar</em> dan membangun.',
+            description: 'Sehari-hari mengajar di S1 Informatika, sekaligus merancang sistem yang benar-benar dipakai di lapangan. Produk-produk di ekosistem ini lahir dari proses itu, bukan dari rencana bisnis semata.',
+            note: 'Dimulai dari satu proyek kecil, tahun 2019'
         },
         {
-            section: 'features',
+            section: 'timeline',
+            eyebrow: 'Perjalanan yang membentuk ekosistem ini',
             items: [
                 {
-                    icon: 'di-code',
-                    title: 'Doctoral Researcher',
-                    content: 'Fokus riset pada optimasi arsitektur perangkat lunak dan integrasi <strong>WebAssembly (Wasm)</strong> untuk sistem berperforma tinggi.',
-                    linkText: 'Research',
-                    linkTarget: 'profile'
+                    year: '2019',
+                    name: 'Ktupad',
+                    meta: 'HKI EC00201952487 · PHP',
+                    desc: 'Proyek pertama — titik awal cara berpikir tentang arsitektur yang ringan dan sederhana.'
                 },
                 {
-                    icon: 'di-edu',
-                    title: 'Academician',
-                    content: 'Dosen tetap pengampu mata kuliah Pemrograman Web, Wireless Mobile Computing, dan Rekayasa Perangkat Lunak. Membimbing mahasiswa membangun mindset engineering yang kuat.',
-                    linkText: 'Teaching',
-                    linkTarget: 'profile'
+                    year: '2023',
+                    name: 'BayamJS',
+                    meta: 'HKI EC00202367008',
+                    desc: 'Arsitektur dirapikan ulang — pendekatan zero-dependency mulai terbentuk jelas.'
                 },
                 {
-                    icon: 'di-person',
-                    title: 'Practitioner',
-                    content: 'Owner & Software Architect di PT Sismadi Langit Solusi. Kreator framework <strong>DonatJS</strong>, solusi MVC zero-dependency berbasis JSON-driven.',
-                    linkText: 'Portfolio',
-                    linkTarget: 'expertise'
+                    year: '2024',
+                    name: 'DonatJS',
+                    meta: 'HKI EC00202414144',
+                    desc: 'Versi yang dipakai hari ini — basis dari seluruh produk di ekosistem Sismadi.'
                 }
             ]
         },
         {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Pendidikan & Karir',
-                lines: [
-                    '### Pendidikan',
-                    '**S3 Informatika (PhD Student)** - Universitas Ahmad Dahlan (mulai 2025)',
-                    '**S2 Ilmu Komputer** - Universitas Budi Luhur',
-                    '**S1 Teknik Informatika** - STMIK Triguna Utama',
-                    '---',
-                    '### Posisi',
-                    '**Dosen Tetap** - Universitas IPWIJA',
-                    '**Owner** - PT Sismadi Langit Solusi'
-                ]
-            },
-            rightCol: {
-                subtitle: 'Fokus Riset & Layanan',
-                lines: [
-                    'Mengintegrasikan perspektif riset ke dalam solusi digital praktis untuk sektor publik dan enterprise.',
-                    'Pengembangan framework **DonatJS** sebagai pembuktian konsep arsitektur yang ringan dan efisien.',
-                    '---',
-                    'table:'
-                ],
-                table: [
-                    { 'Kategori': 'Web Portal', 'Layanan': 'Custom CMS / Landing Page', 'Teknologi': 'DonatJS Core' },
-                    { 'Kategori': 'Business Solution', 'Layanan': 'Sistem Informasi Terintegrasi', 'Teknologi': 'MVC / Microservices' },
-                    { 'Kategori': 'E-Learning', 'Layanan': 'Learning Management System', 'Teknologi': 'JSON-Driven Portal' },
-                    { 'Kategori': 'Consultancy', 'Layanan': 'IT Audit & Architecture Strategy', 'Teknologi': 'Security Standards' }
-                ]
-            }
+            section: 'ledger',
+            eyebrow: 'Dikumpulkan tahun demi tahun — bisa diperiksa langsung',
+            items: [
+                { num: '7 thn', label: 'Proses berkelanjutan sejak Ktupad, 2019' },
+                { num: '7 HKI', label: 'Karya cipta terdaftar resmi' },
+                { num: '1 Paten', label: 'Dalam tahap pemeriksaan substantif DJKI' },
+                { num: 'SINTA', label: 'Publikasi akademik terindeks' },
+                { num: '3 BNSP', label: 'Sertifikasi asesor kompetensi, berlaku s.d. 2027' }
+            ]
         },
         {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Technical Stack',
-                lines: [
-                    'skill:85%:Software Architecture (JS/Node)',
-                    'skill:75%:Cybersecurity & IT Audit',
-                    'skill:70%:Microservices & Wasm (Research)',
-                    'skill:90%:Project Management'
-                ]
-            },
-            rightCol: {
-                subtitle: 'Fokus Profesional',
-                lines: [
-                    '**Software Developer**: Membangun ekosistem perangkat lunak melalui DonatJS, BayamJS, dan KtuPad — terdaftar sebagai Hak Cipta resmi.',
-                    '**Doctoral Study**: Menjalankan riset aktif di bidang software engineering (terdaftar di SINTA & ResearchGate).',
-                    '**Strategic IT Consulting**: Transformasi digital untuk sektor pemerintah dan swasta.'
-                ]
-            }
+            section: 'files',
+            intro: 'Dari proses ini, lahir empat produk — pilih yang relevan untuk Anda',
+            items: [
+                {
+                    code: 'SIS',
+                    accent: 'parchment',
+                    sealText: 'TERVERIFIKASI • SISMADI SIS • ',
+                    tab: 'Berkas 01 · Institusi Pendidikan',
+                    title: 'Sistem akademik yang dirancang mengikuti alur kerja kampus sesungguhnya.',
+                    desc: 'Dirancang berdasarkan riset akademik terpublikasi SINTA, oleh tim yang berasal dari lingkungan kampus itu sendiri — bukan vendor luar yang mengamati dari jauh.',
+                    facts: [
+                        'Terafiliasi Program Studi S1 Informatika, IPWIJA',
+                        'Riset didanai hibah PDP, terpublikasi SINTA'
+                    ],
+                    ctaText: 'Jadwalkan Demo untuk Prodi',
+                    ctaLink: 'https://sis.sismadi.co.id',
+                    domain: 'Sismadi SIS · sis.sismadi.co.id'
+                },
+                {
+                    code: 'LMS',
+                    accent: 'teal',
+                    sealText: 'TERVERIFIKASI • PIAWAI.ID • ',
+                    tab: 'Berkas 02 · Belajar Mandiri',
+                    title: 'Belajar dari orang yang juga mempraktikkan apa yang diajarkan.',
+                    desc: 'Kurikulum disusun oleh seorang pracademic — dosen sekaligus praktisi, agar yang dipelajari terasa relevan dengan pekerjaan sehari-hari.',
+                    facts: [
+                        'Materi dari proyek produksi, bukan simulasi',
+                        'Sertifikat kompetensi BNSP terlampir'
+                    ],
+                    ctaText: 'Mulai Belajar Gratis',
+                    ctaLink: 'https://piawai.id',
+                    domain: 'Piawai · piawai.id'
+                },
+                {
+                    code: 'UMKM',
+                    accent: 'rust',
+                    sealText: 'TERVERIFIKASI • STOKBARANG.ID • ',
+                    tab: 'Berkas 03 · UMKM & Ritel',
+                    title: 'Kelola stok, kasir, dan laporan toko dari satu tempat.',
+                    desc: 'Dipakai oleh toko dan gudang yang sudah berjalan setiap hari — dibangun untuk menyesuaikan cara kerja Anda, bukan sebaliknya.',
+                    facts: [
+                        'Sinkron otomatis, tetap jalan tanpa internet',
+                        'Multi-gudang, kasir, dan laporan jadi satu'
+                    ],
+                    ctaText: 'Coba Gratis Sekarang',
+                    ctaLink: 'https://stokbarang.id',
+                    domain: 'Stokbarang · stokbarang.id'
+                },
+                {
+                    code: 'KRP',
+                    accent: 'brass',
+                    sealText: 'TERVERIFIKASI • SISMADI ERP • ',
+                    tab: 'Berkas 04 · Instansi & Korporat',
+                    title: 'Sistem enterprise yang dibangun mengikuti standar tata kelola dan kebutuhan audit.',
+                    desc: 'Dipercaya menangani proyek Kementerian PUPR dan Tereos FKS Indonesia.',
+                    facts: [
+                        'Klien: Kementerian PUPR (2022–2025)',
+                        'Klien: Tereos FKS Indonesia'
+                    ],
+                    ctaText: 'Ajukan Proposal',
+                    ctaLink: 'https://erp.sismadi.co.id',
+                    domain: 'Sismadi ERP · erp.sismadi.co.id'
+                }
+            ]
         },
         {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Hubungi Saya',
-                lines: [
-                    'contact:di-envelope|Email|wawan@sismadi.com|mailto:wawan@sismadi.com',
-                    'contact:di-instagram|Instagram|instagram.com/wawansismadi|https://instagram.com/wawansismadi',
-                    'contact:di-facebook|Facebook|facebook.com/wawan.sismadi|https://facebook.com/wawan.sismadi',
-                    'contact:di-geo|Lokasi|Jakarta Timur, Indonesia'
-                ]
-            },
-            rightCol: {
-                subtitle: 'Diskusi Proyek',
-                lines: ['form:contact'],
-                fields: [
-                    { type: 'text', name: 'nama', label: 'Nama Lengkap', placeholder: 'Nama Anda' },
-                    { type: 'text', name: 'kontak', label: 'Email / WhatsApp', placeholder: 'email@domain.com atau 08xx...' },
-                    { type: 'text', name: 'perihal', label: 'Perihal', placeholder: 'Misal: Konsultasi Arsitektur' },
-                    { type: 'textarea', name: 'pesan', label: 'Pesan', rows: 5, placeholder: 'Apa yang bisa saya bantu?' }
-                ],
-                submitText: 'Kirim Pesan'
-            }
-        }
-    ],
-
-    riset: [
-        {
-            section: 'titleHero',
-            title: 'Riset',
-            description: 'Eksplorasi mendalam pada optimasi sistem berperforma tinggi melalui integrasi WebAssembly (Wasm) dan Microservices. Fokus riset mencakup efisiensi arsitektur perangkat lunak modern untuk solusi digital masa depan.'
-        },
-        {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Sosial Media',
-                lines: [
-                  'contact:di-web|Universitas Ahmad Dahlan|uad.ac.id|https://uad.ac.id',
-                  'contact:di-envelope|Email|2537083016@webmail.uad.ac.id|mailto:2537083016@webmail.uad.ac.id',
-                  'contact:di-eye|Sinta|6848496|https://sinta.kemdiktisaintek.go.id/authors/profile/6848496',
-                  'contact:di-edu|Googlescholar|KkkcrZ4AAAAJ|https://scholar.google.com/citations?user=KkkcrZ4AAAAJ',
-                  'contact:di-orcid|Orcid|0009-0007-2685-5663|https://orcid.org/0009-0007-2685-5663',
-                ]
-            },
-            rightCol: {
-                subtitle: 'Artikel',
-                lines: [
-                  'PENERAPAN PRESENSI DARING BERBASIS WEBASSEMBLY DAN MICROSERVICES UNTUK PENGENALAN WAJAH PADA LEARNING MANAGEMENT SYSTEM',
-                  'link:DOI 10.51878/edutech.v6i2.9474:10.51878/edutech.v6i2.9474',
-                  'PERBANDINGAN PERFORMA FRAMEWORK MVC DALAM SISTEM KEHADIRAN BERBASIS PENGENALAN WAJAH',
-                  'link:DOI 10.51878/edutech.v5i1.4405:10.51878/edutech.v5i1.4405',
-                  'IMPLEMENTASI ARSITEKTUR MICROSERVICE PADA APLIKASI BANK SAMPAH DIGITAL BERBASIS DONATJS',
-                  'link:DOI 10.51878/cendekia.v5i4.7140:10.51878/cendekia.v5i4.7140',
-                  'IMPLEMENTASI ARSITEKTUR MICROSERVICES PADA WEB APLIKASI PENERIMAAN MAHASISWA BARU',
-                  'link:DOI 10.51878/edutech.v4i2.3062:10.51878/edutech.v4i2.3062',
-                  'Comparative Analysis of Codeigniter, Laravel and Ktupad Frameworks: Case Study Online Exam Applications',
-                  'link:DOI 10.30997/ijar.v3i3.236:10.30997/ijar.v3i3.236',
-                  'IMPLEMENTASI PENGEMBANGAN APLIKASI UJIAN ONLINE MENGGUNAKAN KTUPAD MVC FRAMEWORK',
-                  'link:DOI 10.31933/jemsi.v2i4.437:10.31933/jemsi.v2i4.437',
-
-                  '## Buku',
-                  '---',
-                  '&bull; Analisis mendalam: batasan penggunaan AI dalam pendidikan',
-                  '**ISBN : 9786347260574**',
-                  '&bull; Optimasi penggunaan SVG dalam web development: meningkatkan performa dan user experience',
-                  '**ISBN : 9786238767656**',
-                  '&bull; Pengembangan aplikasi web modern dengan donatjs : panduan lengkap menggunakan pola MVC',
-                  '**ISBN : 9786238488971**',
-                ]
-            }
-        }
-    ],
-
-    edukasi: [
-        {
-            section: 'titleHero',
-            title: 'Edukasi',
-            description: 'Dedikasi dalam dunia akademis sebagai Dosen Tetap di Universitas IPWIJA. Berfokus pada pembentukan mindset engineering melalui pengajaran Rekayasa Perangkat Lunak, Pemrograman Web, dan teknologi mobile terkini.'
-        },
-        {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Sosial Media',
-                lines: [
-                  'contact:di-web|Universitas IPWIJA|ipwija.ac.id|https://ipwija.ac.id',
-                  'contact:di-envelope|Email|wawansismadi@ipwija.ac.id|mailto:wawansismadi@ipwija.ac.id',
-                  'contact:di-youtube|Youtube|@wawansismadi|https://www.youtube.com/@wawansismadi',
-                  'contact:di-github|GitHub|github.com/sismadi|https://github.com/sismadi',
-                ]
-            },
-            rightCol: {
-                subtitle: 'Dosen Pengampu',
-                lines: [
-                    '&bull; Pemrograman Web.',
-                    '&bull; Wireless Mobile Computing.',
-                    '&bull; Rekayasa Perangkat Lunak.'
-                ]
-            }
-        }
-    ],
-
-    industri: [
-        {
-            section: 'titleHero',
-            title: 'Industri',
-            description: 'Implementasi riset ke dalam solusi bisnis nyata melalui PT Sismadi Langit Solusi. Menghadirkan ekosistem perangkat lunak yang diakui secara legal (Hak Cipta) melalui inovasi framework DonatJS, BayamJS, dan Ktupad.'
-        },
-        {
-            section: 'article',
-            layout: 'split',
-            leftCol: {
-                subtitle: 'Sosial Media',
-                lines: [
-                  'contact:di-web|PT Sismadi Langit Solusi|sismadi.co.id|https://sismadi.co.id',
-                  'contact:di-envelope|Email|wawan@sismadi.co.id|mailto:wawan@sismadi.co.id',
-                  'contact:di-linkedin|LinkedIn|linkedin.com/in/sismadi|https://linkedin.com/in/sismadi',
-                  'contact:di-github|GitHub|github.com/sismadi|https://github.com/sismadi',
-                ]
-            },
-            rightCol: {
-                subtitle: 'Hak Cipta',
-                lines: [
-                  'DonatJS LMS',
-                  '**EC002026051501**',
-                  'Aplikasi Bank Sampah Cinta',
-                  '**EC002025035655**',
-                  'ANALISIS MENDALAM: BATASAN PENGGUNAAN AI DALAM PENDIDIKAN',
-                  '**EC002025158185**',
-                  'DonatJS',
-                  '**EC00202414144**',
-                  'BayamJS',
-                  '**EC00202367008**',
-                  'Ktupad',
-                  '**EC00202219047**',
-                  'KTUPAD MVC FRAMEWORK',
-                  '**EC00201952487**',
-                ]
-            }
+            section: 'footer',
+            lines: [
+                'Dosen Informatika IPWIJA • Direktur PT Sismadi Langit Solusi • Kandidat Doktor UAD'
+            ],
+            secondaryLines: [
+                'Untuk kebutuhan resmi & legalitas &rarr; <a href="https://sismadi.co.id">sismadi.co.id</a>'
+            ]
         }
     ]
-
 
 };
