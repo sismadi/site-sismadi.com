@@ -1,224 +1,164 @@
 {
-  "page": "home",
+  "page": "sismadi-landing",
   "data": [
     {
       "section": "header",
       "content": {
-        "nama": "Wawan Sismadi",
-        "tagline": "Bridging the Gap Between Academic Theory and Industrial Innovation.",
-        "deskripsi": "Di dunia yang terobsesi dengan kecepatan teknologi, saya percaya bahwa inovasi sejati lahir dari fondasi riset yang kokoh dan implementasi yang beretika.\n\nAkademisi Informatika, Peneliti, dan Praktisi IT yang berdedikasi mentransformasi ide kompleks menjadi solusi digital fungsional. Berpengalaman 15+ tahun mengawal transformasi digital dari kementerian hingga ruang kelas.\n\nDosen Universitas IPWIJA · Founder PT Sismadi Langit Solusi · SINTA ID: 6848496 · ORCID: 0009-0007-2685-5663",
-        "avatar": "data/asset/me.jpg",
-        "cta": [
-          {
-            "text": "Lihat Portofolio",
-            "link": "#portfolio",
-            "icon": "code/24/var(--pColor)"
-          },
-          {
-            "text": "Hubungi Saya",
-            "link": "mailto:wawan@ipwija.ac.id",
-            "icon": "mail/24/var(--pColor)"
-          }
-        ]
+        "brand": "SISMADI.COM"
       }
     },
     {
-      "section": "stats",
-      "caption": "Akademisi dan Praktisi",
+      "section": "hero",
+      "content": {
+        "eyebrow": "Cerita di balik ekosistem Sismadi",
+        "judul": "Dua peran yang berjalan bersamaan — mengajar dan membangun.",
+        "deskripsi": "Sehari-hari mengajar di S1 Informatika, sekaligus merancang sistem yang benar-benar dipakai di lapangan. Produk-produk di ekosistem ini lahir dari proses itu, bukan dari rencana bisnis semata.",
+        "sublabel": "Dimulai dari satu proyek kecil, tahun 2019"
+      }
+    },
+    {
+      "section": "timeline",
+      "caption": "Perjalanan yang membentuk ekosistem ini",
       "content": [
         {
-          "id": 1,
-          "nama": "Linkedin",
-          "isi": "4",
-          "icon": "linkedin/32/navy",
-          "link": "https://www.linkedin.com/in/sismadi"
-
+          "tahun": "2019",
+          "nama": "Ktupad",
+          "meta": "HKI EC00201952487 · PHP",
+          "deskripsi": "Proyek pertama — titik awal cara berpikir tentang arsitektur yang ringan dan sederhana."
         },
         {
-          "id": 2,
-          "nama": "Github",
-          "isi": "29",
-          "icon": "github/32/black",
-          "link": "https://github.com/sismadi"
+          "tahun": "2023",
+          "nama": "BayamJS",
+          "meta": "HKI EC00202367008",
+          "deskripsi": "Arsitektur dirapikan ulang — pendekatan zero-dependency mulai terbentuk jelas."
         },
         {
-          "id": 3,
-          "nama": "Sinta",
-          "isi": "274",
-          "icon": "edu/32/green",
-          "link": "https://sinta.kemdiktisaintek.go.id/authors/profile/6848496"
-        },
-        {
-          "id": 4,
-          "nama": "Credly",
-          "isi": "29",
-          "icon": "credly/32/orange",
-          "link": "https://credly.com/users/sismadi"
+          "tahun": "2024",
+          "nama": "DonatJS",
+          "meta": "HKI EC00202414144",
+          "deskripsi": "Versi yang dipakai hari ini — basis dari seluruh produk di ekosistem Sismadi."
         }
       ]
     },
     {
-      "section": "progress",
-      "caption": "Keahlian Utama & Positioning",
+      "section": "ledger",
+      "caption": "Dikumpulkan tahun demi tahun — bisa diperiksa langsung",
       "content": [
         {
-          "label": "Web Development (HTML/CSS/JS/PHP)",
-          "percent": 95,
-          "value": "Senior"
+          "nilai": "7 thn",
+          "label": "Proses berkelanjutan sejak Ktupad, 2019"
         },
         {
-          "label": "MVC Framework & Arsitektur Sistem",
-          "percent": 90,
-          "value": "Expert"
+          "nilai": "7 HKI",
+          "label": "Karya cipta terdaftar resmi"
         },
         {
-          "label": "IoT & Embedded Systems",
-          "percent": 80,
-          "value": "Advanced"
+          "nilai": "1 Paten",
+          "label": "Dalam tahap pemeriksaan substantif DJKI"
         },
         {
-          "label": "Cybersecurity — ISO 27001",
-          "percent": 75,
-          "value": "Practitioner"
+          "nilai": "SINTA",
+          "label": "Publikasi akademik terindeks"
         },
         {
-          "label": "AI & Machine Learning Integration",
-          "percent": 70,
-          "value": "Intermediate"
+          "nilai": "3 BNSP",
+          "label": "Sertifikasi asesor kompetensi, berlaku s.d. 2027"
         }
       ]
     },
     {
-      "section": "table",
-      "caption": "Afiliasi & Pengalaman",
+      "section": "files-intro",
+      "content": {
+        "teks": "Dari proses ini, lahir empat produk — pilih yang relevan untuk Anda"
+      }
+    },
+    {
+      "section": "files",
       "content": [
         {
-          "Institusi": "Universitas IPWIJA",
-          "Peran": "Dosen Tetap (Informatika)",
-          "Periode": "2022 - Sekarang"
+          "id": "institusi",
+          "accent": "parchment",
+          "seal_code": "SIS",
+          "seal_text": "TERVERIFIKASI • SISMADI SIS •",
+          "tab": "Berkas 01 · Institusi Pendidikan",
+          "judul": "Sistem akademik yang dirancang mengikuti alur kerja kampus sesungguhnya.",
+          "deskripsi": "Dirancang berdasarkan riset akademik terpublikasi SINTA, oleh tim yang berasal dari lingkungan kampus itu sendiri — bukan vendor luar yang mengamati dari jauh.",
+          "facts": [
+            "Terafiliasi Program Studi S1 Informatika, IPWIJA",
+            "Riset didanai hibah PDP, terpublikasi SINTA"
+          ],
+          "cta": {
+            "text": "Jadwalkan Demo untuk Prodi",
+            "link": "https://sis.sismadi.co.id"
+          },
+          "domain": "Sismadi SIS · sis.sismadi.co.id"
         },
         {
-          "Institusi": "PT Sismadi Langit Solusi",
-          "Peran": "Business Owner \nWeb Developer",
-          "Periode": "Aktif"
+          "id": "lms",
+          "accent": "teal",
+          "seal_code": "LMS",
+          "seal_text": "TERVERIFIKASI • PIAWAI.ID •",
+          "tab": "Berkas 02 · Belajar Mandiri",
+          "judul": "Belajar dari orang yang juga mempraktikkan apa yang diajarkan.",
+          "deskripsi": "Kurikulum disusun oleh seorang pracademic — dosen sekaligus praktisi, agar yang dipelajari terasa relevan dengan pekerjaan sehari-hari.",
+          "facts": [
+            "Materi dari proyek produksi, bukan simulasi",
+            "Sertifikat kompetensi BNSP terlampir"
+          ],
+          "cta": {
+            "text": "Mulai Belajar Gratis",
+            "link": "https://piawai.id"
+          },
+          "domain": "Piawai · piawai.id"
         },
         {
-          "Institusi": "PT Bintang Shafwan",
-          "Peran": "Tenaga Ahli IT",
-          "Periode": "2012 - Sekarang"
+          "id": "umkm",
+          "accent": "rust",
+          "seal_code": "UMKM",
+          "seal_text": "TERVERIFIKASI • STOKBARANG.ID •",
+          "tab": "Berkas 03 · UMKM & Ritel",
+          "judul": "Kelola stok, kasir, dan laporan toko dari satu tempat.",
+          "deskripsi": "Dipakai oleh toko dan gudang yang sudah berjalan setiap hari — dibangun untuk menyesuaikan cara kerja Anda, bukan sebaliknya.",
+          "facts": [
+            "Sinkron otomatis, tetap jalan tanpa internet",
+            "Multi-gudang, kasir, dan laporan jadi satu"
+          ],
+          "cta": {
+            "text": "Coba Gratis Sekarang",
+            "link": "https://stokbarang.id"
+          },
+          "domain": "Stokbarang · stokbarang.id"
         },
         {
-          "Institusi": "Kementerian PUPR & Perindustrian",
-          "Peran": "IT Consultant \nProject-based",
-          "Periode": "2011 - Sekarang "
-        },
-        {
-          "Institusi": "LPIA",
-          "Peran": "Instruktur Komputer",
-          "Periode": "2005 - 2011"
+          "id": "korporat",
+          "accent": "brass",
+          "seal_code": "KRP",
+          "seal_text": "TERVERIFIKASI • SISMADI ERP •",
+          "tab": "Berkas 04 · Instansi & Korporat",
+          "judul": "Sistem enterprise yang dibangun mengikuti standar tata kelola dan kebutuhan audit.",
+          "deskripsi": "Dipercaya menangani proyek Kementerian PUPR dan Tereos FKS Indonesia.",
+          "facts": [
+            "Klien: Kementerian PUPR (2022–2025)",
+            "Klien: Tereos FKS Indonesia"
+          ],
+          "cta": {
+            "text": "Ajukan Proposal",
+            "link": "https://erp.sismadi.co.id"
+          },
+          "domain": "Sismadi ERP · erp.sismadi.co.id"
         }
       ]
     },
     {
-      "section": "stats",
-      "caption": "Metrik Otoritas Intelektual",
-      "content": [
-        {
-          "id": 1,
-          "nama": "SINTA Score",
-          "isi": "274",
-          "icon": "edu/32/var(--pColor)",
-          "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6848496"
-        },
-        {
-          "id": 2,
-          "nama": "PhD Progress",
-          "isi": "AI Integrasi",
-          "icon": "info/32/var(--pColor)",
-          "url": "#"
-        },
-        {
-          "id": 3,
-          "nama": "HKI Terdaftar",
-          "isi": "6",
-          "icon": "check/32/var(--pColor)",
-          "url": "#"
-        },
-        {
-          "id": 4,
-          "nama": "Global Badge",
-          "isi": "29",
-          "icon": "credly/32/var(--pColor)",
-          "url": "https://credly.com/users/sismadi"
+      "section": "footer",
+      "content": {
+        "primary": "Dosen Informatika IPWIJA • Direktur PT Sismadi Langit Solusi • Kandidat Doktor UAD",
+        "secondary": {
+          "teks": "Untuk kebutuhan resmi & legalitas →",
+          "link": "https://sismadi.co.id",
+          "link_text": "sismadi.co.id"
         }
-      ]
-    },
-    {
-      "section": "table",
-      "caption": "Pencapaian Strategis (Featured Projects)",
-      "content": [
-        {
-          "Kategori": "Academic Excellence",
-          "Pencapaian": "PhD Candidate: Integrasi AI dalam Pendidikan",
-          "Tahun": "2025/2026"
-        },
-        {
-          "Kategori": "Social Impact",
-          "Pencapaian": "Arsitek Utama Aplikasi Bank Sampah (Digital Waste Bank)",
-          "Tahun": "2024"
-        },
-        {
-          "Kategori": "Tech Community",
-          "Pencapaian": "Lead Maintainer DonatJS - MVC Indonesia",
-          "Tahun": "Aktif"
-        },
-        {
-          "Kategori": "Verified Skills",
-          "Pencapaian": "Koleksi Badge Credly: Cloud & Cybersecurity",
-          "Tahun": "2025"
-        }
-      ]
-    },
-    {
-      "section": "table",
-      "caption": "Open Source Repository",
-      "content": [
-        {
-          "Project": "DonatJS",
-          "Bahasa": "JavaScript",
-          "Status": "Active Development"
-        },
-        {
-          "Project": "KtuPAD",
-          "Bahasa": "JavaScript",
-          "Status": "Research Case"
-        }
-      ]
-    },
-    {
-      "section": "btn",
-      "btn": [
-        {
-          "text": "LinkedIn",
-          "link": "https://www.linkedin.com/in/sismadi",
-          "icon": "linkedin/24/navy"
-        },
-        {
-          "text": "GitHub",
-          "link": "https://github.com/sismadi",
-          "icon": "github/24/black"
-        },
-        {
-          "text": "SINTA",
-          "link": "https://sinta.kemdiktisaintek.go.id/authors/profile/6848496",
-          "icon": "edu/24/green"
-        },
-        {
-          "text": "Credly",
-          "link": "https://credly.com/users/sismadi",
-          "icon": "credly/24/orange"
-        }
-      ]
+      }
     }
   ]
 }
